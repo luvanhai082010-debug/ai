@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Giải Sử - Hỗ trợ đa ảnh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI GIẢI BÀI TẬP LỊCH SỬ</h1>
+        <p>Tải NHIỀU ảnh câu hỏi của bạn lên theo thứ tự</p>
+
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*" multiple>
+            <label for="imageInput" class="custom-file-upload">Chọn ảnh bài tập (có thể chọn nhiều)</label>
+            
+            <div id="imagePreviews" class="image-previews">
+                <p class="placeholder-text">Chưa có ảnh nào được chọn. Hãy chọn ảnh theo thứ tự câu hỏi để AI giải bài.</p>
+            </div>
+            
+            <button id="submitBtn">Giải bài ngay</button>
+        </div>
+
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Đang phân tích và giải bài... Vui lòng đợi trong giây lát.</p>
+        </div>
+        
+        <div id="result">
+            <h2>Lời giải chi tiết:</h2>
+            <div id="answerContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
